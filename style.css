@@ -6,6 +6,8 @@
   font-size: 5em;
   text-align: center;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 #header {
@@ -15,7 +17,7 @@
 }
 
 #middle {
-  height: 60vh;
+  height: 70vh;
   width: 100vw;
 }
 
@@ -43,3 +45,66 @@
   width: 100vw;
   background-color: #f08a4b;
 }
+@media(max-width:600px){
+  #middle{
+    display: flex;
+    flex-direction: column;
+  }
+  #nav{
+    width: 100vw;
+    height: 12vh;
+  }
+  #articles{
+    width: 100vw;
+    height: 43vh;
+  }
+  #ads{
+    width: 100vw;
+    height: 15vh;
+  }
+}
+@media(min-width: 601px) and (max-width: 1000px){
+  #middle{
+    display: flex;
+    flex-direction: column;
+  }
+  #nav{
+    width: 100vw;
+    height: 15vh;
+  }
+  #main{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+  }
+  #articles{
+    width: 50vw;
+    height: 55vh;
+  }
+  #ads{
+    width: 50vw;
+    height: 55vh;
+  }
+}
+@media(min-width:1001px){
+  #middle{
+    display: flex;
+    flex-direction: row;
+  }
+  #nav{
+    width: 25vw;
+    height: 100%;
+  }
+  #main{
+    height:100% ;
+    display: flex;
+    flex-direction: row;
+  }
+  #articles{
+    width: 67%;
+    height: 100%;
+  }
+  #ads{
+    width: 33%;
+    height: 100%;
+  }}
